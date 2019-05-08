@@ -16,7 +16,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <title>Log in</title>
+    <title>Compra</title>
 </head>
 
 <body class="bg-transparent">
@@ -58,60 +58,31 @@
         </nav>
         <br><br><br>
         <div class="row justify-content-around">
-            <!-- CAJA DE LOGIN -->
-            <div class="col-sm-4 border p-4 bg-light h-50">
+            <div class="border p-4 bg-light h-50" style="width: 60%">
                 <fieldset class="m-0">
-                    <legend>Log in</legend>
+                    <legend align="center"><b>Compra</b></legend>
                     <form>
-                        <div class="form-row">
-                            <div>
-                                <label for="validationServer01">Correo</label>
-                                <input type="text" class="form-control" placeholder="Ejemplo@ejemplo.ejem" required>
+                        <div class="form-row justify-content-around">
+                            <div class="col-sm-6 justify-content-center">
+                                <p align="center"><strong>VÍA PAYPAL</strong></p>
+                            </div>
+                            <div class="col-sm-6 justify-content-around pl-5">
+                                <p align="center"><strong>VÍA TARJETA DE CRÉDITO </strong></p>
+                                <input type="text" class="form-control" placeholder="Número de tarjeta" required>
                             </div>
                         </div><br>
                         <div class="form-row">
-                            <div>
-                                <label for="validationServer01">Contraseña</label>
-                                <input type="password" class="form-control" placeholder="**********" required>
+                            <div class="col-sm-6 justify-content-around border bg-white p-2">
+                                <a href="https://www.paypal.com/es/home"><img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c530.png" class="img-fluid"></a>
+                            </div>
+                            <div class="col-sm-6 justify-content-around pl-5">
+                                <input type="date" class="form-control" required><br>
+                                <div><input type="text" class="form-control w-25" placeholder="CVC" required><img src="CVC.PNG"width="20%"></div>
                             </div>
                         </div><br>
-                        <div class="form-group">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="Recuerdame" required
-                                    checked>
-                                <label class="form-check-label" for="Recuerdame">
-                                    Recuerdame
-                                </label>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary" type="submit">Entrar</button>
-                    </form>
-                </fieldset>
-            </div>
-            <!-- CAJA DE REGISTRO -->
-            <div class="col-sm-4 border p-4 bg-light">
-                <fieldset class="m-0">
-                    <legend>Registro</legend>
-                    <form>
-                        <div class="form-row">
-                            <div>
-                                <label for="validationServer01">Nombre de usuario: </label>
-                                <input type="text" class="form-control" placeholder="Pepito" required>
-                            </div>
+                        <div class="form-row float-right mr-3">
+                            <button class="btn btn-primary">Pagar</button>
                         </div><br>
-                        <div class="form-row">
-                            <div>
-                                <label for="validationServer01">Correo</label>
-                                <input type="text" class="form-control" placeholder="Ejemplo@ejemplo.ejem" required>
-                            </div>
-                        </div><br>
-                        <div class="form-row">
-                            <div>
-                                <label for="validationServer01">Contraseña</label>
-                                <input type="password" class="form-control" placeholder="**********" required>
-                            </div>
-                        </div><br>
-                        <button class="btn btn-secondary" type="submit">Registrarme</button>
                     </form>
                 </fieldset>
             </div>

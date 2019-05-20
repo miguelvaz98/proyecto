@@ -1,0 +1,39 @@
+{
+    "articulo": [
+        {
+            "codigo":1,
+            "descripcion": "Sudadera"
+        }, {
+            "codigo":2,
+            "descripcion": "Camiseta"
+        }, {
+            "codigo":3,
+            "descripcion": "Movil"
+        }
+    ],
+
+    "talla": [
+        {
+            "codigo":1,
+            "descripcion": "XXL"
+        }, {
+            "codigo":2,
+            "descripcion": "XL"
+        }, {
+            "codigo":3,
+            "descripcion": "L"
+        }, {
+            "codigo":4,
+            "descripcion": "M"
+        }, {
+            "codigo":5,
+            "descripcion": "S"
+        }, {
+            "codigo":6,
+            "descripcion": "XS"
+        }, {
+            "codigo":7,
+            "descripcion": "XXS"
+        }
+    ]
+}

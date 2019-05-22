@@ -1,7 +1,8 @@
 window.addEventListener("load", cargarTipo);
 window.addEventListener("load", iniciar);
 
-var tallas = false;
+var cont = 0;
+var cunt = 0;
 function iniciar(){
     document.getElementById("tipo").addEventListener("change", cargaTalla);
 }
@@ -14,10 +15,23 @@ function cargarTipo(){
 }
 
 function cargarTalla(){
+    if (cont==0){
     let httpRequest = new XMLHttpRequest()
     httpRequest.addEventListener("readystatechange", recibirTalla)
     httpRequest.open("GET", "producto.json")
     httpRequest.send()
+    cont++;
+    }
+}
+
+function cargarMovil(){
+    if (cunt==0){
+    let httpRequest = new XMLHttpRequest()
+    httpRequest.addEventListener("readystatechange", recibirMovil)
+    httpRequest.open("GET", "producto.json")
+    httpRequest.send()
+    cunt++;
+    }
 }
 
 function recibirTipo() {
@@ -102,7 +116,7 @@ function borrar(){
     while(lista.hasChildNodes){
         lista.removeChild
     }
-    
+
 }
 
 function cargaTalla(){
@@ -115,7 +129,7 @@ function cargaTalla(){
         document.getElementById("talla").selectedIndex = "0";
         document.getElementById("talla").disabled=""
         document.getElementById("talla").required="required"
-        recibirMovil()
+        cargarMovil()
     }
     else{
         document.getElementById("talla").selectedIndex = "0";

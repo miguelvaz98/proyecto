@@ -35,5 +35,40 @@
             "codigo":7,
             "descripcion": "XXS"
         }
+    ],
+
+    "moviles": [
+        {
+            "codigo":1,
+            "descripcion": "Google Pixel 3 XL"
+        }, {
+            "codigo":2,
+            "descripcion": "ZTE One Plus 6"
+        }, {
+            "codigo":3,
+            "descripcion": "Sony Xperia XZ3"
+        }, {
+            "codigo":4,
+            "descripcion": "LG G8 ThinQ"
+        }, {
+            "codigo":5,
+            "descripcion": "Xiaomi Mi 9"
+        }, {
+            "codigo":6,
+            "descripcion": "Samsung Galaxy S10+"
+        }, {
+            "codigo":7,
+            "descripcion": "iPhone XS Max"
+        }, {
+            "codigo":8,
+            "descripcion": "Huawei P30 Pro"
+        }, {
+            "codigo":9,
+            "descripcion": "Samsung Galaxy Fold"
+        }, {
+            "codigo":10,
+            "descripcion": "LGV50"
+        }
     ]
+
 }

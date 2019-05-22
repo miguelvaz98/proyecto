@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon.png?v=7739871010e6">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="icon" type="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon.png?v=7739871010e6">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -19,7 +17,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <title>Usuario</title>
-    <link rel="icon" type="https://cdn.sstatic.net/Sites/es/img/apple-touch-icon.png?v=7739871010e6">
+    <script src="usuario.js"></script>
 </head>
 
 <body class="bg-light">
@@ -64,13 +62,33 @@
     <div class="container">
         <div class="d-flex justify-content-center mt-5" style="font-size: 30px"><b>MI PERFIL</b></div>
         <div class="row">
-            <div class="align-center col-sm-4 mt-5 text-center">
-                        <a target="principal" href="perfil.html">Perfil</a><br><br>
-                        <a target="principal" href="compras.html">Compras realizadas</a><br><br>
-                        <a target="principal" href="opiniones.html">Comentarios</a>
+            <div class="align-center col-sm-3 mt-5 text-center">
+                <div id="perfil">Perfil</div><br>
+                <div id="Compras">Compras realizadas</div><br>
+                <div id="Comentarios">Comentarios</div>
             </div>
-            <div class="d-flex justify-content-center col-sm-8 mt-5">
-                <iframe id="principal" name="principal" src="perfil.html" id="principal" frameborder="0" width="100%"></iframe>
+            <div class="bg-white col-sm-9 mt-4">
+                <div id="profile">
+                    <div class="text-center" style="font-size: 30px;"><b>Información personal</b></div><br>
+                    <div class="ml-5">
+                        <b>Nombre: </b><span id="nombre"></span><br><br>
+                        <b>Apellidos: </b><span id="apellidos"></span><br><br>
+                        <b>Nombre de usuario: </b><span id="Username"></span><br><br>
+                        <b>Correo: </b><span id="Correo"></span>
+                    </div>
+                </div>
+                <div id="comments" style="display: none">
+                    <div class="d-flex justify-content-center text-center" style="font-size: 30px"><b>Opiniones realizadas</b></div><br>
+                    <div id="sinOpinion"><b>De momento no se ha realizado ninguna opinión sobre los productos</b></div><br>
+                </div>
+                <div id="sales" style="display: none">
+                    <div class="d-flex justify-content-center" style="font-size: 30px"><b>Compras realizadas</b></div><br>
+                    <div><b>Producto: </b><span id="producto"></span></div><br>
+                    <div><b>Tipo: </b><span id="tipo"></span></div><br>
+                    <div><b>Talla: </b><span id="talla"></span></div><br>
+                    <div><b>Cantidad: </b><span id="cantidad"></span></div><br>
+                    <div><b>Opinión: </b><span id="hayOpinion"></span></div>
+                </div>
             </div>
         </div><br>
     </div>

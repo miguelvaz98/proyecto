@@ -17,6 +17,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <title>Producto</title>
+    <script src="producto.js"></script>
 </head>
 
 <body class="bg-transparent">
@@ -60,19 +61,17 @@
         <div class="col-sm-12 justify-content-center">
             <span id="producto de turno">PRODUCTO</span>
         </div><br><br>
-        <div class="row justify-content-around border bg-light p-2">
-            <!-- CAJA DE LOGIN -->
+        <div class="row justify-content-around border bg-light ">
             <div class="col-sm-4 mr-4">
                 <img src="https://statics.pampling.com/imagenes/galerias/imagen_29480.jpg" width="400" height="400">
             </div>
-            <!-- CAJA DE REGISTRO -->
             <div class="col-sm-7 p-4 ml-5">
                 <span id="nombre_prod">Nombre del producto</span>
                 <div class="mt-4 ml-3">
-                    <select id="tipo">
+                    <select id="tipo" required>
                         <option>Seleccione el tipo de producto</option>
                         </select>
-                    </div>
+                    </div><span id="info"></span>
                     <div class="mt-4 ml-3">
                         <select id="talla" disabled>
                             <option>Seleccione la talla</option>

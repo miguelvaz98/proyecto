@@ -58,9 +58,7 @@ function recibirTalla() {
                 let lista = document.getElementById("talla")
                 let list = JSON.parse(this.responseText)
                 let tipo = list.talla;
-            while (lista.hasChildNodes()) {   
-                lista.removeChild(lista.firstChild);
-            }
+            borrar()
             lista.appendChild(crear("Seleccione la talla"))
             for (items of tipo) {
                 lista.appendChild(crear(items["descripcion"]))
@@ -84,9 +82,7 @@ function recibirMovil() {
                 let lista = document.getElementById("talla")
                 let list = JSON.parse(this.responseText)
                 let tipo = list.moviles;
-                while (lista.hasChildNodes()) {   
-                    lista.removeChild(lista.firstChild);
-                  }
+                borrar()
             console.log(lista)
             lista.appendChild(crear("Seleccione la marca de movil"))
             for (items of tipo) {
@@ -116,8 +112,8 @@ function crear(texto) {
 
 function borrar(){
     let lista = document.getElementById("talla");
-    while(lista.hasChildNodes){
-        lista.removeChild
+    while (lista.hasChildNodes()) {   
+        lista.removeChild(lista.firstChild);
     }
 
 }

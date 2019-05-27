@@ -59,7 +59,7 @@ function recibirTalla() {
                 let list = JSON.parse(this.responseText)
                 let tipo = list.talla;
             borrar()
-            lista.appendChild(crear("Seleccione la talla"))
+            lista.appendChild(crear("--Seleccione la talla--"))
             for (items of tipo) {
                 lista.appendChild(crear(items["descripcion"]))
             }
@@ -84,7 +84,7 @@ function recibirMovil() {
                 let tipo = list.moviles;
                 borrar()
             console.log(lista)
-            lista.appendChild(crear("Seleccione la marca de movil"))
+            lista.appendChild(crear("--Seleccione la marca de movil--"))
             for (items of tipo) {
                 lista.appendChild(crear(items["descripcion"]))
             }

@@ -15,23 +15,17 @@ function cargarTipo(){
 }
 
 function cargarTalla(){
-    if (cont==0){
     let httpRequest = new XMLHttpRequest()
     httpRequest.addEventListener("readystatechange", recibirTalla)
     httpRequest.open("GET", "producto.json")
     httpRequest.send()
-    cont++;
-    }
 }
 
 function cargarMovil(){
-    if (cunt==0){
     let httpRequest = new XMLHttpRequest()
     httpRequest.addEventListener("readystatechange", recibirMovil)
     httpRequest.open("GET", "producto.json")
     httpRequest.send()
-    cunt++;
-    }
 }
 
 function recibirTipo() {
@@ -64,6 +58,10 @@ function recibirTalla() {
                 let lista = document.getElementById("talla")
                 let list = JSON.parse(this.responseText)
                 let tipo = list.talla;
+            while (lista.hasChildNodes()) {   
+                lista.removeChild(lista.firstChild);
+            }
+            lista.appendChild(crear("Seleccione la talla"))
             for (items of tipo) {
                 lista.appendChild(crear(items["descripcion"]))
             }
@@ -86,6 +84,11 @@ function recibirMovil() {
                 let lista = document.getElementById("talla")
                 let list = JSON.parse(this.responseText)
                 let tipo = list.moviles;
+                while (lista.hasChildNodes()) {   
+                    lista.removeChild(lista.firstChild);
+                  }
+            console.log(lista)
+            lista.appendChild(crear("Seleccione la marca de movil"))
             for (items of tipo) {
                 lista.appendChild(crear(items["descripcion"]))
             }
